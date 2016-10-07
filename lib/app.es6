@@ -4,9 +4,9 @@ import RiveScript from "rivescript";
 
 let bot = new RiveScript();
 
-// bot.loadDirectory("brain", loading_done, loading_error);
+ bot.loadDirectory("brain", loadingDone, loadingError);
 
-bot.loadFile("brain/begin.rive", loadingDone, loadingError);
+// bot.loadFile("brain/begin.rive", loadingDone, loadingError);
 
 function loadingDone(batchNum) {
   console.log("Batch #" + batchNum + " has finished loading!");
